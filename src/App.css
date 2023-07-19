@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+
+/* Main Heading */
+h1 {
+  text-align: center;
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+}
+
+/* Search */
+.search {
+  flex: 0 0 65%;
+}
+
+.search input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+/* FIleter */
+.filter {
+  flex: 0 0 25%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filter select {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.filter select:hover {
+  cursor: pointer;
+}
+
+/* Card Display */
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.card-container {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.card-container:hover {
+  cursor: pointer;
+  box-shadow: 1px 3px 5px #f1356d;
+}
+.card-container h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+
+/* Single Card Info */
+.card {
+  padding: 10px 16px;
+  margin-bottom: 20px 0;
+  font-size: 20px;
+  line-height: 30px;
+}
+.card p {
+  font-family: "Quicksand";
+  margin-left: 10px;
+}
+.card .name {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: #f1356d;
+}
+
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #fff;
+  border: none;
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #eee;
+}
+
+.pagination button:focus {
+  outline: none;
+}
+
+.pagination button.active {
+  background-color: #ccc;
+  color: #fff;
+}
+
+/* Cricketer Details Page */
+.details-container {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+
+.details-card {
+  padding: 20px 16px;
+  margin-bottom: 20px 0;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.details-card h4 {
+  font-size: 30px;
+  padding-bottom: 10px;
+  color: #f1356d;
+}
+.details-card p {
+  font-family: "Quicksand";
+  margin-left: 20px;
+  justify-content: center;
+}
+
+/* Back to Cricketers */
+.back-link a {
+  display: block;
+  max-width: fit-content;
+  font-size: 20px;
+  text-decoration: solid;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* Similar Players */
+.similar {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.similar-card {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.similar-card:hover {
+  cursor: pointer;
+  box-shadow: 1px 3px 5px #f1356d;
+}
+.similar-card h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+
+/* Responsive Styles */
+
+/* Tablets and Small Laptops */
+@media (max-width: 1024px) {
+  .content {
+    max-width: 800px;
+    margin: 40px auto;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  h1 {
+    font-size: x-large;
+    text-align: center;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .search,
+  .filter {
+    flex: 1;
+    margin-bottom: 10px;
+  }
+
+  .filter {
+    justify-content: flex-start;
+  }
+  
+  .content {
+    max-width: 600px;
+    margin: 30px auto;
+    line-height: 30px;
+  }
+
+  .card {
+    padding: 10px 16px;
+    margin-bottom: 20px 0;
+    font-size: 20px;
+    line-height: 17px;
+  }
+  .card p {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  .card .name {
+    font-size: 20px;
+  }
+
+  .details-card {
+    padding: 15px 12px;
+    margin-bottom: 17px 0;
+    font-size: 17px;
+    line-height: 17px;
+  }
+  
+  .details-card h4 {
+    font-size: 17px;
+    padding-bottom: 10px;
+  }
+  .details-card p {
+    margin-left: 17px;
+  }
+
+  .back-link a {
+    font-size: 17px;
+    margin-top: 17px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  h1 {
+    font-size: large;
+    text-align: center;
+  }
+
+  .search input,
+  .filter select {
+    height: 35px;
+  }
+
+  .content {
+    max-width: 300px;
+    margin: 25px auto;
+  }
+
+  .card {
+    padding: 10px 16px;
+    margin-bottom: 20px 0;
+    font-size: 20px;
+    line-height: 10px;
+  }
+  .card p {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  .card .name {
+    font-size: 15px;
+  }
+
+  .details-card {
+    padding: 13px 10px;
+    margin-bottom: 15px 0;
+    font-size: 15px;
+    line-height: 15px;
+  }
+  
+  .details-card h4 {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  .details-card p {
+    margin-left: 15px;
+  }
+
+  .back-link a {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+}
+
+/* Adjust other styles as needed for responsiveness */
